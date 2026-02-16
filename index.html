@@ -682,15 +682,17 @@ startButton.addEventListener("click", () => {
         // This is the code we will "type" out. It mimics the actual file structure.
         const SOURCE_CODE_TEXT = `
 
-
-
 马年新春，万象奔腾。
 
 愿你在新的一年里，如骏马扬蹄，步履坚定、目光清朗——
-愿学业如骏马踏春，一路高歌猛进；笔下有锋芒，心中有方向，在每一次考试与选择中都能从容应对、稳步进阶。
-愿事业如骏马驰骋原野，既有速度，更有耐力；项目顺利推进，能力持续升级，在每一次挑战中积累筹码，在每一次付出中收获回报。
+愿学业如骏马踏春，一路高歌猛进；笔下有锋芒，心中有
+方向，在每一次考试与选择中都能从容应对、稳步进阶。
+愿事业如骏马驰骋原野，既有速度，更有耐力；项目顺利
+推进，能力持续升级，在每一次挑战中积累筹码，在每一
+次付出中收获回报。
 
-愿这一年：有冲劲，而不失分寸；有野心，也有底气；有奔跑的勇气，更有抵达的实力。
+愿这一年：有冲劲，而不失分寸；有野心，也有底气；有
+奔跑的勇气，更有抵达的实力。
 
 马到成功，万事胜意。
 新春大吉！
@@ -742,18 +744,38 @@ startButton.addEventListener("click", () => {
         );
 
         html = html.replace(
-            /愿学业如骏马踏春，一路高歌猛进；笔下有锋芒，心中有方向，在每一次考试与选择中都能从容应对、稳步进阶。/g,
-            '<span style="color: #FFFFFF; font-weight: bold;">愿学业如骏马踏春，一路高歌猛进；笔下有锋芒，心中有方向，在每一次考试与选择中都能从容应对、稳步进阶。</span>'
+            /愿学业如骏马踏春，一路高歌猛进；笔下有锋芒，心中有/g,
+            '<span style="color: #FFFFFF; font-weight: bold;">愿学业如骏马踏春，一路高歌猛进；笔下有锋芒，心中有</span>'
         );
 		
 		html = html.replace(
-            /愿事业如骏马驰骋原野，既有速度，更有耐力；项目顺利推进，能力持续升级，在每一次挑战中积累筹码，在每一次付出中收获回报。/g,
-            '<span style="color: #FFFFFF; font-weight: bold;">愿事业如骏马驰骋原野，既有速度，更有耐力；项目顺利推进，能力持续升级，在每一次挑战中积累筹码，在每一次付出中收获回报。</span>'
+            /方向，在每一次考试与选择中都能从容应对、稳步进阶。/g,
+            '<span style="color: #FFFFFF; font-weight: bold;">方向，在每一次考试与选择中都能从容应对、稳步进阶。</span>'
         );
 		
 		html = html.replace(
-            /愿这一年：有冲劲，而不失分寸；有野心，也有底气；有奔跑的勇气，更有抵达的实力。/g,
-            '<span style="color: #FF0000; font-weight: bold;">愿这一年：有冲劲，而不失分寸；有野心，也有底气；有奔跑的勇气，更有抵达的实力。</span>'
+            /愿事业如骏马驰骋原野，既有速度，更有耐力；项目顺利/g,
+            '<span style="color: #FFFFFF; font-weight: bold;">愿事业如骏马驰骋原野，既有速度，更有耐力；项目顺利</span>'
+        );
+		
+		html = html.replace(
+            /推进，能力持续升级，在每一次挑战中积累筹码，在每一/g,
+            '<span style="color: #FFFFFF; font-weight: bold;">推进，能力持续升级，在每一次挑战中积累筹码，在每一</span>'
+        );
+		
+		html = html.replace(
+            /次付出中收获回报。/g,
+            '<span style="color: #FFFFFF; font-weight: bold;">次付出中收获回报。</span>'
+        );
+		
+		html = html.replace(
+            /愿这一年：有冲劲，而不失分寸；有野心，也有底气；有/g,
+            '<span style="color: #FF0000; font-weight: bold;">愿这一年：有冲劲，而不失分寸；有野心，也有底气；有</span>'
+        );
+		
+		html = html.replace(
+            /奔跑的勇气，更有抵达的实力。/g,
+            '<span style="color: #FF0000; font-weight: bold;">奔跑的勇气，更有抵达的实力。</span>'
         );
 		
 		html = html.replace(
